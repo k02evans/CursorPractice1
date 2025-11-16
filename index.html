@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndieLab - Music Artist Resources & Genre Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cursor Light Overlay -->
+    <div class="cursor-light" id="cursorLight"></div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>IndieLab</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title">Empower Your Music Journey</h2>
+            <p class="hero-subtitle">Comprehensive resources for independent artists across all genres</p>
+            <div class="hero-cta">
+                <button class="btn-primary">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genre Selector -->
+    <section class="genre-selector">
+        <div class="container">
+            <h3 class="section-title">Browse by Genre</h3>
+            <div class="genre-tabs">
+                <button class="genre-tab active" data-genre="all">All Genres</button>
+                <button class="genre-tab" data-genre="hiphop">Hip-Hop</button>
+                <button class="genre-tab" data-genre="pop">Pop</button>
+                <button class="genre-tab" data-genre="rock">Rock</button>
+                <button class="genre-tab" data-genre="edm">EDM</button>
+                <button class="genre-tab" data-genre="rnb">R&B</button>
+                <button class="genre-tab" data-genre="jazz">Jazz</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <!-- Community Management -->
+            <div class="service-card" data-genre="all hiphop pop rock edm rnb jazz">
+                <div class="service-icon">CM</div>
+                <h3 class="service-title">Community Management</h3>
+                <p class="service-description">Learn to build and manage artist communities. Connect with your audience through the right platforms and grow your fanbase organically.</p>
+                <div class="service-buttons">
+                    <button class="service-btn">Discord Setup</button>
+                    <button class="service-btn">Bandcamp Groups</button>
+                    <button class="service-btn">Skool Communities</button>
+                    <button class="service-btn">Whop Pages</button>
+                </div>
+            </div>
+
+            <!-- Affiliate Marketing Strategies -->
+            <div class="service-card" data-genre="all hiphop pop rock edm rnb jazz">
+                <div class="service-icon">AM</div>
+                <h3 class="service-title">Affiliate Marketing Strategies</h3>
+                <p class="service-description">Monetize your music content with viral short-form, long-form, and affiliate partnerships. Turn your passion into profit.</p>
+                <div class="service-buttons">
+                    <button class="service-btn">Viral Content Tips</button>
+                    <button class="service-btn">Affiliate Programs</button>
+                    <button class="service-btn">Example Brands</button>
+                </div>
+            </div>
+
+            <!-- Essential Software & Hardware Links -->
+            <div class="service-card" data-genre="all hiphop pop rock edm rnb jazz">
+                <div class="service-icon">SH</div>
+                <h3 class="service-title">Essential Software & Hardware Links</h3>
+                <p class="service-description">Explore trusted tools and equipment for production. From plugins to DAWs, find everything you need to create professional-quality music.</p>
+                <div class="service-buttons">
+                    <button class="service-btn">Plugins (Waves, Splice)</button>
+                    <button class="service-btn">DAWs (FL Studio, Ableton, Logic)</button>
+                    <button class="service-btn">Hardware (Mics, Speakers, Monitors)</button>
+                </div>
+            </div>
+
+            <!-- Learning Resources -->
+            <div class="service-card" data-genre="all hiphop pop rock edm rnb jazz">
+                <div class="service-icon">LR</div>
+                <h3 class="service-title">Learning Resources</h3>
+                <p class="service-description">Top YouTube channels to learn music marketing, streaming, and performance. Stay updated with the latest trends and techniques.</p>
+                <div class="service-buttons">
+                    <button class="service-btn">YouTube Channels</button>
+                    <button class="service-btn">TikTok Creators</button>
+                    <button class="service-btn">Kick/Twitch Tips</button>
+                </div>
+            </div>
+
+            <!-- Local Performance Finder -->
+            <div class="service-card" data-genre="all hiphop pop rock edm rnb jazz">
+                <div class="service-icon">LP</div>
+                <h3 class="service-title">Local Performance Finder</h3>
+                <p class="service-description">Find bars and clubs near you that host live artist performances. Connect with local venues and expand your reach.</p>
+                <div class="service-buttons">
+                    <button class="service-btn">Find Venues</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>IndieLab</h4>
+                    <p>Empowering independent artists worldwide</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">Instagram</a>
+                        <a href="#" class="social-link" aria-label="Twitter">Twitter</a>
+                        <a href="#" class="social-link" aria-label="YouTube">YouTube</a>
+                        <a href="#" class="social-link" aria-label="TikTok">TikTok</a>
+                        <a href="#" class="social-link" aria-label="Discord">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 IndieLab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
