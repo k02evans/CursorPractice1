@@ -89,7 +89,7 @@ export const SECTIONS = {
     ],
   },
   "affiliate-marketing": {
-    name: "Affiliate Marketing Strategies",
+    name: "Market Your Music",
     categories: [
       { id: "viral-content-tips", name: "Viral Content Tips" },
       { id: "affiliate-programs", name: "Affiliate Programs" },

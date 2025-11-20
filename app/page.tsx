@@ -2,6 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image, { type StaticImageData } from "next/image";
+import campaignIcon from "@/assets/campaign.png";
+import spreadIcon from "@/assets/spread.png";
+import musicIcon from "@/assets/music.png";
+import tutorialIcon from "@/assets/tutorial.png";
+import microphoneIcon from "@/assets/microphone.png";
 import { SECTIONS } from "@/lib/instant";
 
 const GENRE_TABS = [
@@ -77,23 +83,23 @@ export default function HomePage() {
         <div className="max-w-[1200px] mx-auto px-5">
           {/* Community Management */}
           <ServiceCard
-            icon="CM"
+            icon={campaignIcon}
             title="Community Management"
             description="Learn to build and manage artist communities. Connect with your audience through the right platforms and grow your fanbase organically."
             section="community-management"
           />
 
-          {/* Affiliate Marketing */}
+          {/* Market Your Music */}
           <ServiceCard
-            icon="AM"
-            title="Affiliate Marketing Strategies"
+            icon={spreadIcon}
+            title="Market Your Music"
             description="Monetize your music content with viral short-form, long-form, and affiliate partnerships. Turn your passion into profit."
             section="affiliate-marketing"
           />
 
           {/* Software & Hardware */}
           <ServiceCard
-            icon="SH"
+            icon={musicIcon}
             title="Essential Software & Hardware Links"
             description="Explore trusted tools and equipment for production. From plugins to DAWs, find everything you need to create professional-quality music."
             section="software-hardware"
@@ -101,7 +107,7 @@ export default function HomePage() {
 
           {/* Learning Resources */}
           <ServiceCard
-            icon="LR"
+            icon={tutorialIcon}
             title="Learning Resources"
             description="Top YouTube channels to learn music marketing, streaming, and performance. Stay updated with the latest trends and techniques."
             section="learning-resources"
@@ -109,7 +115,7 @@ export default function HomePage() {
 
           {/* Local Performance */}
           <ServiceCard
-            icon="LP"
+            icon={microphoneIcon}
             title="Local Performance Finder"
             description="Find bars and clubs near you that host live artist performances. Connect with local venues and expand your reach."
             section="local-performance"
@@ -121,7 +127,7 @@ export default function HomePage() {
 }
 
 interface ServiceCardProps {
-  icon: string;
+  icon: StaticImageData;
   title: string;
   description: string;
   section: keyof typeof SECTIONS;
@@ -134,8 +140,14 @@ function ServiceCard({ icon, title, description, section }: ServiceCardProps) {
     <div className="bg-[rgba(26,54,93,0.7)] backdrop-blur-lg rounded-3xl p-8 md:p-12 mb-10 shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 border border-beige-dark/30 hover:border-beige relative overflow-hidden group">
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-beige scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
       
-      <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 mb-6 rounded-2xl bg-beige/20 border border-beige-dark/30 text-beige font-extrabold text-lg md:text-xl tracking-wider shadow-md">
-        {icon}
+      <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 mb-6 rounded-2xl bg-beige/20 border border-beige-dark/30 shadow-md">
+        <Image
+          src={icon}
+          alt={`${title} icon`}
+          width={48}
+          height={48}
+          className="w-10 h-10 md:w-12 md:h-12 object-contain drop-shadow-lg"
+        />
       </div>
       
       <h3 className="text-3xl md:text-4xl font-extrabold mb-5 text-beige tracking-tight">

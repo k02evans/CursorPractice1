@@ -8,7 +8,7 @@ A full-stack Next.js application powered by InstantDB for independent music arti
 - **User Profiles**: Customizable profiles with avatar and social media links (Spotify, Instagram, SoundCloud, YouTube, TikTok, Twitter, Bandcamp, Apple Music)
 - **Community Recommendations**: Submit and browse recommendations across multiple categories:
   - Community Management (Discord, Bandcamp, Skool, Whop)
-  - Affiliate Marketing Strategies
+  - Market Your Music
   - Essential Software & Hardware
   - Learning Resources
   - Local Performance Venues

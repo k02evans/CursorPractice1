@@ -20,7 +20,7 @@ Your IndieLab application has been successfully transformed into a full-stack Ne
 3. **Category Pages**
    - Dynamic routing for all sections and categories:
      - Community Management (Discord, Bandcamp, Skool, Whop)
-     - Affiliate Marketing (Viral Content, Programs, Brands)
+     - Market Your Music (Viral Content, Programs, Brands)
      - Software & Hardware (Plugins, DAWs, Hardware)
      - Learning Resources (YouTube, TikTok, Kick/Twitch)
      - Local Performance (Find Venues)
