@@ -4,8 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import Image, { type StaticImageData } from "next/image";
 import campaignIcon from "@/assets/campaign.png";
-import spreadIcon from "@/assets/spread.png";
-import musicIcon from "@/assets/music.png";
+import spreadIcon from "@/assets/spread-2.png";
+import musicIcon from "@/assets/music-2.png";
 import tutorialIcon from "@/assets/tutorial.png";
 import microphoneIcon from "@/assets/microphone.png";
 import { SECTIONS } from "@/lib/instant";
@@ -140,13 +140,18 @@ function ServiceCard({ icon, title, description, section }: ServiceCardProps) {
     <div className="bg-[rgba(26,54,93,0.7)] backdrop-blur-lg rounded-3xl p-8 md:p-12 mb-10 shadow-md hover:shadow-2xl transition-all hover:-translate-y-2 border border-beige-dark/30 hover:border-beige relative overflow-hidden group">
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-beige scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
       
-      <div className="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 mb-6 rounded-2xl bg-beige/20 border border-beige-dark/30 shadow-md">
+      <div className="relative flex items-center justify-center w-16 h-16 md:w-20 md:h-20 mb-6 rounded-2xl border border-beige-dark/20 shadow-xl bg-gradient-to-br from-[#fff8ee] via-[#fdf1da] to-[#f6e4c3] overflow-hidden">
+        <div
+          className="absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_top,#ffffff_0%,rgba(255,255,255,0)_70%)] opacity-70"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 rounded-2xl blur-xl bg-[#fff3da]/60" aria-hidden="true" />
         <Image
           src={icon}
           alt={`${title} icon`}
           width={48}
           height={48}
-          className="w-10 h-10 md:w-12 md:h-12 object-contain drop-shadow-lg"
+          className="relative z-10 w-10 h-10 md:w-12 md:h-12 object-contain drop-shadow-lg"
         />
       </div>
       
